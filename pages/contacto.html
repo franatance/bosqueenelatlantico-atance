@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo_fav.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6a962365e9.js" crossorigin="anonymous"></script>
+    <title>Ubicacion | Bosque en el Atlantico</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="imagen logo" class="img_logo"></a>
+        </div>
+		<nav>
+			<ul class="header_menu">
+				<li class="menu_border"><a href="../index.html">Inicio</a></li>
+				<li class="menu_border"><a href="./cabanas.html">Cabañas</a></li>
+				<li class="menu_border"><a href="./servicios.html">Servicios</a></li>
+				<li class="menu_border"><a href="./ubicacion.html">Ubicacion</a></li>
+                <li class="menu_border"><a href="./contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+    <section class="section_principal">
+        <h1>Contactanos</h1>
+        <form action="enviar.php" method="get" enctype="text/plain">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <br>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su email">
+            </div>
+            <br>
+            <div>
+                <label for="telefono">Telefono:</label>
+                <input type="radio" name="telefono" value="1"> Fijo 
+                <input type="radio" name="telefono" value="2"> Celular
+                <br>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su telefono">
+            </div>
+            <br>
+            <div>
+                <label for="pregunta">Sobre que desea consultar?</label>
+                <br>
+                <select name="pregunta" id="pregunta">
+                    <option value="01">Disponibilidad</option>
+                    <option value="02">Servicios y Cabañas</option>
+                    <option value="03">Otros</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="comentarios">Consulta</label>
+                <br>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Ingrese su consulta"></textarea>
+            </div>
+            <br>
+            <div> 
+                <input type="checkbox" name="acepto" id="acepto">
+                <label for="acepto">Deseo recibir promociones y novedades.</label>
+            </div>
+            <br>
+            <input type="submit" value="Enviar">  
+        </form>
+        <br>
+    </section>
+    
+    <footer id="piePagina">
+        <div class="footer_contacto">
+            <div class="caja">
+                <figure>
+                    <a href="../index.html"><img src="../img/logo_fav.png" alt="imagen logo footer"></a>
+                </figure>
+            </div>
+            <div class="caja">
+                <h3>CONTACTO</h3>
+                <p>Bosque en el Atlantico - Av.28, Mar Azul, Bs As, Argentina</p>
+                <p>Tel: +54 9 294 471 1234</p>
+                <p>Email: info@bosqueenelatlantico.com</p>
+            </div>
+            <div class="caja">
+                <h3>SIGUENOS</h3>
+                <div class="redSocial">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    <a href="https://web.whatsapp.com/" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <p>Copyright © 2022 | <b>Franco A.</b> - Todos los Derechos Reservados</p>
+        </div>
+	</footer>
+</body>
+</html>

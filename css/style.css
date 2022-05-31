@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background-color: #602B04;
+    display: flex;
+    padding: 25px;
+    height: 85px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo {
+    width: 60%;
+    margin: 0 auto;
+}
+.img_logo{
+    max-width: 100%;
+}
+.header_menu{
+    display: flex;
+    list-style: none;
+}
+.header_menu li{
+    font-size: 1.2rem;
+}
+.menu_border{
+    border-right: 1px solid rgb(189, 189, 189);
+}
+.header_menu li a {
+    color: white;
+    margin: 0 15px;
+}
+.header_menu li a:hover{
+    color: #F2B567;
+}
+#piePagina{
+    width: 100%;
+    background-color: #4b4940;
+}
+#piePagina .footer_contacto{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 18px 0px;
+}
+#piePagina .footer_contacto .caja figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+#piePagina .footer_contacto .caja figure img{
+    width: 60px;
+}
+#piePagina .footer_contacto .caja h3{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+#piePagina .footer_contacto .caja p{
+    color: #efefef;
+    margin-bottom: 7px;
+    font-size: 15px;
+}
+#piePagina .footer_contacto .redSocial a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #F2B567;
+    margin-right: 10px;
+    background-color: #443e36;
+    text-align: center;
+    transition: all 300ms ease;
+}
+#piePagina .footer_contacto .redSocial a:hover{
+    color:#fff;
+}
+#piePagina .footer_copyright{
+    background-color:#151309;
+    padding: 5px 5px;
+    text-align: center;
+    color:#6a6a6a;
+}
+#piePagina .footer_copyright p{
+    font-size: 14px;
+}
+.img_banner{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;  
+}
+.section_index{
+    background-color: #F9F0B5;
+    text-align: center;
+}
+.section_index div{
+    padding: 0px 0px 25px 0px;
+}
+.section_principal{
+    background-color: #ECE0B2;
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tarjeta{
+    width: 350px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.tarjeta:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-2%);
+}
+.tarjeta_img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+.tarjeta_contenido{
+    padding: 15px;
+    text-align: center;
+}
+.tarjeta_contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+.tarjeta_contenido h3{
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.button{
+    align-items: center;
+    background-color: #fa6400;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    transition: all 250ms;
+    width: auto;
+    cursor: pointer;
+}
+.button:hover {
+    transform: translateY(-1px);
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+} 
+.grid_container{
+    background-color: #ECE0B2;
+    padding: 20px 80px;
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    grid-template-rows: repeat(4,150px);
+    gap: 35px;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.grid_item{
+    background-color:#fff;
+}
+
+@media screen and (max-width: 800px) {
+    #piePagina .footer_contacto{
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 25px;
+        padding: 18px 0px;
+    }
+}
